@@ -1,0 +1,155 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header styles */
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 5px solid #ffdb58; /* Golden border */
+    top: 0;
+    z-index: 999;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 5px;
+    font-weight: bold;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.5);
+}
+
+/* Navigation bar styles */
+.navbar {
+    background-color: #1e90ff;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: center;
+    position: sticky;
+}
+
+.navbar ul {
+    list-style: none;
+}
+
+.navbar ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.navbar ul li:last-child {
+    margin-right: 0;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+    background-color: #00008b; /* Dark blue */
+}
+
+.navbar ul li a:hover {
+    background-color: #4169e1; /* Royal blue */
+}
+
+/* Section styles */
+section {
+    background-color: #fff;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    padding: 30px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #ff4500; /* Orange Red */
+    text-transform: uppercase;
+}
+
+section p {
+    margin-bottom: 20px;
+    color: #555;
+}
+
+/* Results section styles */
+#diagram-placeholder {
+    height: 300px;
+    background-color: #ddd;
+    margin-top: 20px;
+    text-align: center;
+    line-height: 300px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #666;
+}
+
+/* Footer styles */
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    border-top: 5px solid #ffdb58; /* Golden border */
+}
+
+footer p {
+    font-size: 1.2rem;
+    margin-bottom: 0;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    section h2 {
+        font-size: 2rem;
+    }
+
+    .navbar ul li a {
+        padding: 10px 15px;
+    }
+
+    footer p {
+        font-size: 1rem;
+    }
+}
+
+/* Hover effect for sections */
+section.hoverable {
+    transition: transform 0.3s ease;
+}
+
+section.hoverable:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
